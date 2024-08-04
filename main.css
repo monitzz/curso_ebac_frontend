@@ -1,4 +1,4 @@
-body {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -40,7 +40,7 @@ header li a {
 }
 
 .articles article img {
-  height: 100px;
+  width: 100%;
 }
 
 .articles article {
@@ -85,7 +85,7 @@ section h2,
 }
 
 section h2 {
-  font-size: 22px;
+  font-size: 32px;
 }
 
 #sports {
@@ -93,13 +93,29 @@ section h2 {
 }
 
 #sports .articles article a {
-  background-color: #009432;
+  background-color: rgb(0, 148, 50);
 }
 
 #economy {
-  background-color: #f8f59f;
+  background-color: rgba(252, 244, 2, 0.1);
 }
 
 #economy .articles article a {
-  background-color: #ff9f1a;
+  background-color: rgb(255, 159, 26);
+}
+
+#entertainment {
+  background-color: rgba(255, 19, 2, 0.1);
+}
+
+#entertainment .articles a {
+  background-color: rgb(237, 33,36);
+}
+
+#technology {
+  background-color: rgba(0, 40, 140, 0.1);
+}
+
+#technology .articles a {
+  background-color: rgb(33, 148, 237);
 }
