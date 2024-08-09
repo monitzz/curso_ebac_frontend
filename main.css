@@ -2,25 +2,62 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: #400632;
+}
+
+body {
+  background-color: #dfdfff;
 }
 
 main {
-  width: 1280px;
-  margin: 0 auto;
+  width: 30em;
+  height: 25em;
+  margin: 15em auto;
+  background-color: #f8f8ff;
+  border-radius: 15px;
+  padding: 30px;
+  display: block;
 }
 
 form {
   display: flex;
   flex-direction: column;
   width: 15em;
-  margin: 20em auto;
+  margin: 3em auto;
 }
 
-form * {
+form input,
+form button {
   padding: 10px;
   font-size: 18pt;
+  border-radius: 8px;
+  border: solid 1px #400632;
+}
+
+button {
+  background-color: #d1d1ff;
 }
 
 input {
   margin-bottom: 0.5em;
+  text-align: center;
+}
+
+input::webkit-outer-spin-button,
+input::webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+form p {
+  font-size: 14pt;
+}
+
+main > p {
+  text-align: center;
+  font-size: 14pt;
 }
