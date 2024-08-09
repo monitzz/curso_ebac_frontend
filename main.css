@@ -3,3 +3,24 @@
   margin: 0;
   padding: 0;
 }
+
+main {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 15em;
+  margin: 20em auto;
+}
+
+form * {
+  padding: 10px;
+  font-size: 18pt;
+}
+
+input {
+  margin-bottom: 0.5em;
+}
