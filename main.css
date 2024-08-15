@@ -3,3 +3,25 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+main {
+  width: 25em;
+  margin: 4em auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.form-area {
+  padding: 3em;
+}
+
+ul {
+  text-align: left;
+}
+
+ul li {
+  list-style: none;
+  padding: 2em;
+}
