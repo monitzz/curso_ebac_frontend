@@ -2,6 +2,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: hsl(344.6, 100%, 13.7%);
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: hsl(345, 100%, 98.4%);
 }
 
 main {
@@ -15,13 +21,28 @@ main {
 
 .form-area {
   padding: 3em;
+
+  & form {
+    & * {
+      padding: 0.4em;
+      font-size: 14pt;
+      border-radius: 8px;
+    }
+
+    & button {
+      border: solid 1px hsl(344.6, 100%, 80%);
+      background-color: hsl(344.6, 100%, 85%);
+      font-weight: 600;
+    }
+  } 
 }
 
 ul {
   text-align: left;
+
+  & li {
+    list-style: none;
+    padding: 2em;
+  }
 }
 
-ul li {
-  list-style: none;
-  padding: 2em;
-}
