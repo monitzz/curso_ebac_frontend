@@ -25,12 +25,12 @@ main {
 }
 
 .form-area {
-  padding: 3em;
+  padding: 2em 1em;
 
   & form {
     & * {
-      padding: 0.4em;
-      font-size: 14pt;
+      padding: 0.8em;
+      font-size: 16pt;
       border-radius: 8px;
     }
 
