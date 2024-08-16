@@ -56,7 +56,13 @@ ul {
 
   & li {
     list-style: none;
-    padding: 2em;
+    padding: 1.2em 2em;
+    font-size: 18pt;
+    background-color: hsl(345, 20%, 95%);
+    border-radius: 16px;
+    border: solid 1px hsla(345, 20%, 60%, 0.1);
+    width: 20em;
+    margin: 1em auto;
   }
 }
 
