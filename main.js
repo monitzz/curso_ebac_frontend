@@ -4,7 +4,7 @@ $(document).ready(function() {
   $("form").on("submit", function(e) {
     e.preventDefault();
 
-    const newListItem = $(`<li id="item-${listCount}" class="list-item" style="text-decoration: none"></li>`);
+    const newListItem = $(`<li id="item-${listCount}" class="list-item"></li>`);
     $(newListItem).appendTo("ul");
     $(".list-item")[listCount].innerText = $("#activity-name").val();
 
