@@ -53,6 +53,7 @@ main {
 
 ul {
   text-align: left;
+  transition: all ease-in-out 0.5s;
 
   & li {
     padding: 1.2em 2em;
@@ -63,11 +64,12 @@ ul {
     width: 20em;
     margin: 1em auto;
     transition: all ease-in-out 0.5s;
-    overflow: scroll;
+    overflow-wrap: break-word;
+    list-style: none;
   }
 }
 
 .completed {
-  text-decoration: line-through !important;
+  text-decoration: line-through;
   opacity: 0.4;
 }
