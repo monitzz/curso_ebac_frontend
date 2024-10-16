@@ -1,0 +1,104 @@
+@use "config/reset";
+@use "config/variables" as *;
+@use "sass:math";
+@use "sass:color";
+
+@function pixelToEm($pixelTarget, $pixelContent: 16px) {
+    @return math.div($pixelTarget, $pixelContent) + em;
+}
+
+body {
+    background-color: $bodyBackground;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: $headerBackground;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    & .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: pixelToEm(16px) 0;
+    }
+}
+
+.menu {
+    display: flex;
+
+    & li {
+        font-weight: bold;
+        margin-left: pixelToEm(24px);
+
+        & a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+
+section {
+    padding: pixelToEm(56px) 0;
+}
+
+.products {
+    margin-top: pixelToEm(40px);
+    display: grid;
+    grid-template-columns: repeat(3, 32.66%);
+    column-gap: 1%;
+    row-gap: 4%;
+    width: 100%;
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: pixelToEm(16px);
+}
+
+.product-button {
+    display: block;
+    background-color: $buttonBackground;
+    color: #fff;
+    text-align: center;
+    padding: pixelToEm(8px) 0;
+    border-radius: 8px;
+    margin-top: pixelToEm(8px);
+    text-decoration: none;
+
+    &:hover {
+        background-color: color.scale($buttonBackground, $lightness: 15%);
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .container {
+        max-width: 80%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .products {
+        display: block;
+    }
+
+    .product-item {
+        margin-bottom: pixelToEm(32px);
+    }
+}
