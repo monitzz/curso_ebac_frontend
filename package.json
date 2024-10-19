@@ -7,11 +7,5 @@
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
-  },
-  "dependencies": {
-    "sass": "^1.79.5"
-  },
-  "scripts": {
-    "sass": "sass src/main.scss build/main.css --watch"
   }
 }

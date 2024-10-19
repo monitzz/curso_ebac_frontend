@@ -1,1 +1,1 @@
-Este projeto é uma atividade de SASS do curso Full Stack Python da EBAC.
+Este projeto é uma atividade de Gulp do curso Full Stack Python da EBAC.
