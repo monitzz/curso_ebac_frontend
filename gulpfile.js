@@ -3,20 +3,18 @@ import * as dartSass from "sass";
 import gulpSass from "gulp-sass";
 import sourcemaps from "gulp-sourcemaps";
 import uglify from "gulp-uglify";
-import obfuscate from "gulp-obfuscate";
 import imagemin from "gulp-imagemin";
-import imageminMozjpeg from "imagemin-mozjpeg";
 
 const sass = gulpSass(dartSass);
 
 const paths = {
-    images: "src/images/*",
-    scripts: "src/scripts/*.js",
-    styles: "src/styles/*.scss",
+    images: "./src/images/*",
+    scripts: "./src/scripts/*.js",
+    styles: "./src/styles/*.scss",
     build: {
-        images: "build/images",
-        scripts: "build/scripts",
-        styles: "build/styles"
+        images: "./build/images",
+        scripts: "./build/scripts",
+        styles: "./build/styles"
     }
 };
 
@@ -32,7 +30,6 @@ export const imageCompress = () => {
 export const compressJS = () => {
     return gulp.src(paths.scripts)
         .pipe(uglify())
-        .pipe(obfuscate())
         .pipe(gulp.dest(paths.build.scripts));
 }
 
