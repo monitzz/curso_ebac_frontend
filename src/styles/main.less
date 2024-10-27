@@ -3,10 +3,6 @@
 @mobileBreakpoint: ~"(min-width: 768px) and (max-width: 767px)";
 @tabletBreakpoint: ~"(max-width: 1023px)";
 
-.pxToEm(@selector, @amount) when (isem(@amount)) {
-    @{selector}: unit((@amount / 16), em);
-}
-
 * {
     margin: 0;
     padding: 0;
