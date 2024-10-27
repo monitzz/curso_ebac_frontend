@@ -1,0 +1,16 @@
+{
+  "name": "curso_ebac_frontend",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "less": "^4.2.0",
+    "less-watch-compiler": "^1.16.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "less": "less-watch-compiler ./src/styles/ ./build/styles/ main.less"
+  }
+}
