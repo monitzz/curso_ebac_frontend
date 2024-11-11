@@ -1,19 +1,14 @@
 {
   "name": "curso_ebac_frontend",
-  "type": ".cjs",
+  "type": "module",
   "devDependencies": {
     "@types/bun": "latest",
-    "grunt": "^1.6.1",
-    "grunt-contrib-less": "^3.0.0",
-    "grunt-contrib-uglify": "^5.2.2",
-    "grunt-contrib-watch": "^1.1.0",
-    "grunt-replace": "^2.0.2"
+    "sass": "^1.80.6"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
   "scripts": {
-    "grunt": "grunt",
-    "build": "grunt build"
+    "sass": "sass ./styles/main.scss ./dist/main.css --watch"
   }
 }
